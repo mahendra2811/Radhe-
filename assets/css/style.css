@@ -131,7 +131,9 @@ body { background: var(--white); }
  * #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { 
+  padding-inline: 15px; 
+}
 
 .btn {
   color: var(--white);
@@ -141,6 +143,7 @@ body { background: var(--white); }
   padding: var(--padding, 8px 18px);
   border: var(--border-width, 2px) solid transparent;
   transition: var(--transition);
+
 }
 
 .btn-primary {
@@ -149,6 +152,21 @@ body { background: var(--white); }
 }
 
 .btn-primary:is(:hover, :focus) {
+  background: var(--yale-blue);
+  border-color: var(--yale-blue);
+}
+.btn-morePhoto {
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--bright-navy-blue);
+  border-color: var(--bright-navy-blue);
+  text-align: center;
+  align-content: center;
+  
+}
+
+.btn-morePhoto:is(:hover, :focus) {
   background: var(--yale-blue);
   border-color: var(--yale-blue);
 }
@@ -188,7 +206,12 @@ body { background: var(--white); }
   margin-bottom: 8px;
 }
 
-.section-title { margin-bottom: 15px; }
+.section-title {
+  margin-bottom: 15px; 
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+
+}
 
 .section-text {
   color: var(--black-coral);
@@ -365,7 +388,12 @@ body { background: var(--white); }
   opacity: 0.7;
   pointer-events: all;
 }
-
+.logotext{
+  
+  margin: auto;
+  color: white;
+  
+}
 
 
 
@@ -375,7 +403,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-banner-1.jpg");
+  /* background-image: url("../images/hero-banner-1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -446,6 +474,44 @@ body { background: var(--white); }
   font-weight: var(--fw-600);
   margin-top: 35px;
 }
+
+/* -------------------------------- *\
+    About us 
+\* -------------------------------- */
+
+.about { 
+  padding-block: var(--section-padding); 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-15);
+  overflow: hidden;
+}
+
+.about-item:nth-child(3) { grid-area: 1 / 2 / 3 / 3; }
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.para{
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
 
 
 
@@ -639,7 +705,13 @@ body { background: var(--white); }
  * #GALLERY
 \*-----------------------------------*/
 
-.gallery { padding-block: var(--section-padding); }
+.gallery { 
+  padding-block: var(--section-padding); 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
 
 .gallery-list {
   display: grid;
@@ -875,6 +947,8 @@ address {
 
   section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
     text-align: center;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
   }
 
   .section-text { margin-bottom: 40px; }
