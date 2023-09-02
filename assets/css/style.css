@@ -407,7 +407,7 @@ body { background: var(--white); }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: hsla(0, 0%, 0%, 0.7);
+  background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: overlay;
   display: grid;
   place-items: center;
@@ -508,8 +508,8 @@ body { background: var(--white); }
   object-fit: cover;
 }
 .para{
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
+  /* margin-right: 1rem; */
+  /* margin-left: 1rem; */
 }
 
 
